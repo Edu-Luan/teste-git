@@ -1,12 +1,4 @@
 node{
-    stage('build'){
-        bat 'python --version'
-    }
-    
-    stage('test'){
-        bat 'python hello.py'        
-    }
-    
     stage('deploy'){
         echo "acabouu"          
     }

@@ -1,0 +1,16 @@
+node{
+    stage('build'){
+        bat 'python --version'
+    }
+    
+    stage('test'){
+        git branch: 'main', url: 'https://github.com/Edu-Luan/teste-git.git'
+        bat 'python hello.py'
+        
+    }
+    
+    stage('deploy'){
+        echo "acabouu"  
+        
+    }
+}
